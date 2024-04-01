@@ -18,5 +18,8 @@ body{
 }
 
 .titrehistoire{
-    font-family: "PT";
+    font-family: "PT Serif", serif;
+    font-size: 80px;
+    font-weight: 400;
+    font-style: normal;
 }
