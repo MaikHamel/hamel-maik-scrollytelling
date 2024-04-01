@@ -1,0 +1,22 @@
+*{
+    box-sizing: border-box;
+}
+
+:root {
+    --blanc: #FFFFFF;
+    --grispastel: #B3B3B3;
+    --grispale: #7D7D7D;
+    --gris: #525252;
+    --grisfonce: #383838;
+    --noir: #000000;
+    -rougefonce: #973F3F;
+
+}
+
+body{
+    overflow: hidden;
+}
+
+.titrehistoire{
+    font-family: "PT";
+}
