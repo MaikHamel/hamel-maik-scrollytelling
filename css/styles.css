@@ -2,7 +2,6 @@
 
 *{
     box-sizing: border-box;
-    object-fit: cover;
 }
 
 
@@ -19,6 +18,7 @@
 
 body{
     width:100vw;
+    height:100vw;
     overflow-x: hidden;
     background-color: var(--noir);
     margin: 0;
@@ -77,6 +77,7 @@ p {
         width: 8vh;
         height: 8vh;
     }
+    
 }
 
 @media screen and (max-width:1200px) {
@@ -161,10 +162,7 @@ p {
         color:var(--blanc);
         font-size: 11px;
     }
-
-
-   
-
+    
 }
 
 
@@ -193,48 +191,62 @@ p {
 
 
 .chapitre1 {
-    background-size: cover;
     background-image: url("/img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
+    background-size: cover;
 }
 
 .chapitre2 {
+    background-image:url("/img/img_arriere_plan/chapitre_2/background_foret_arbre_milieu__chapitre_2.png");
     background-size: cover;
-    background-image: url("/img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
 }
-.chapitre3 {
-    object-fit: contain;
+.chapitre2 {
+    background-image: url("/img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
     background-size: cover;
-    /*
+}
+
+.chapitre2 {
+    background-image: url("/img/img_arriere_plan/chapitre_2/background_foret_arbre_proche__chapitre_2.png");
+    background-size: cover;
+}
+
+.chapitre3 {
     background-image: url("/img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.png");
-    */
-    background-image: url("/img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
+    background-size: cover;
 }
 
 .chapitre4 {
-    display: none;
-    background-size: cover;
     background-image: url("/img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");
+    background-size: cover;
+}
+.chapitre5 {
+    background-image: url("/img/img_arriere_plan/chapitre_5/background_foret_chapitre_5.png");
+    background-size: cover;
 }
 
 .chapitre5 {
-    display: none;
+    background-image:url("/img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.png");
     background-size: cover;
-    background-image: url("/img/img_arriere_plan/chapitre_5/background_foret_arbre_avant_chapitre_5.png");
 }
-.chapitre6 {
-    display: none;
+
+.chapitre5 {
+    background-image: url("/img/img_arriere_plan/chapitre_5/background_foret_arbre_avant_chapitre_5.png");
     background-size: cover;
+}
+
+
+
+
+.chapitre6 {
     background-image: url("/img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");
+    background-size: cover;
 }
 
 .chapitre7 {
-    display: none;
-    background-size: cover;
     background-image: url("/img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png");
+    background-size: cover;
 }
 
 .chapitre8 {
-    display: none;
-    background-size: cover;
     background-image: url("/img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png");
+    background-size: cover;
 }
