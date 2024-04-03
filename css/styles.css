@@ -29,7 +29,11 @@ header {
     background-image: url("/img/img_arriere_plan/titre/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    filter: grayscale(100%) brightness(200%);
+    filter: grayscale(100%) brightness(150%) ;
+}
+
+p {
+    filter:brightness(200%)
 }
 
 .titrehistoire{
@@ -51,7 +55,7 @@ header {
 }
 .textedescription {
     width:80vh;
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     font-family:"Overlock" ;
     color: var(--blanc);
@@ -62,23 +66,47 @@ header {
     flex-direction: column;
     width:150px;
     height:150px;
-    
-    
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width: 1500px){
+    .fleche img {
+        width: 8vh;
+        height: 8vh;
+    }
+}
+
+@media screen and (max-width:1200px) {
     .paragraphe{
+        width:80vw;
         font-family:"Overlock" ;
         text-align: center;
         color:var(--blanc);
         font-size: 13px;
-        
-        
+    }
+
+}
+
+@media screen and (max-width:800px) {
+    .titrehistoire{
+        font-family: "PT Serif", serif;
+        font-size: 80px;
+        font-weight: 400;
+        font-style: normal;
+        width:90vw;
+        text-align: center;
+        color: var(--blanc);
+    }
+    .paragraphe{
+        width:80vw;
+        font-family:"Overlock" ;
+        text-align: center;
+        color:var(--blanc);
+        font-size: 13px;
     }
 
     .textedescription {
         width:70vw;
-        font-size: 15px;
+        font-size: 16px;
         margin-bottom: 10%;
         text-align: center;
         font-family:"Overlock" ;
@@ -92,12 +120,77 @@ header {
         height:150px;
     }
 
+    
+    .fleche img {
+    width: 6vh;
+    height: 6vh;
+    
+
+    }
+   
+
+}
+
+@media screen and (max-width: 500px) {
+    .titrehistoire{
+        font-family: "PT Serif", serif;
+        font-size: 80px;
+        font-weight: 400;
+        font-style: normal;
+        width:90vw;
+        text-align: center;
+        color: var(--blanc);
+        margin-bottom: 0;
+    }
+
+    .textedescription {
+        width:70vw;
+        font-size: 16px;
+        text-align: center;
+        font-family:"Overlock" ;
+        color: var(--blanc);
+    }
+    .paragraphe{
+        width:80vw;
+        font-family:"Overlock" ;
+        text-align: center;
+        color:var(--blanc);
+        font-size: 11px;
+    }
+
+    .titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
+        width:50vw;
+    }
+   
+
 }
 
 
 
-.containerfleche img {
-    margin-left: 35%;
-    width: 5vh;
-    height: 5vh;
+.containerfleche {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+
+
+.titredesc {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
+    width:100vw;
+    height:100vh;
+}
+
+.chapitre1 {
+    
+}
+
+
+
