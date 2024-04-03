@@ -1,6 +1,10 @@
+
+
 *{
     box-sizing: border-box;
+    object-fit: cover;
 }
+
 
 :root {
     --blanc: #FFFFFF;
@@ -14,7 +18,7 @@
 }
 
 body{
-    
+    width:100vw;
     overflow-x: hidden;
     background-color: var(--noir);
     margin: 0;
@@ -158,9 +162,7 @@ p {
         font-size: 11px;
     }
 
-    .titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
-        width:50vw;
-    }
+
    
 
 }
@@ -186,11 +188,53 @@ p {
 .titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
     width:100vw;
     height:100vh;
-}
-
-.chapitre1 {
     
 }
 
 
+.chapitre1 {
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
+}
 
+.chapitre2 {
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
+}
+.chapitre3 {
+    object-fit: contain;
+    background-size: cover;
+    /*
+    background-image: url("/img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.png");
+    */
+    background-image: url("/img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
+}
+
+.chapitre4 {
+    display: none;
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");
+}
+
+.chapitre5 {
+    display: none;
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_5/background_foret_arbre_avant_chapitre_5.png");
+}
+.chapitre6 {
+    display: none;
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");
+}
+
+.chapitre7 {
+    display: none;
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png");
+}
+
+.chapitre8 {
+    display: none;
+    background-size: cover;
+    background-image: url("/img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png");
+}
