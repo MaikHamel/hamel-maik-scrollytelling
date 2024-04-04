@@ -1,7 +1,8 @@
 
 
 *{
-    box-sizing: border-box;
+    box-sizing: content-box;
+    margin: 0;
 }
 
 
@@ -17,8 +18,6 @@
 }
 
 body{
-    width:100vw;
-    height:100vw;
     overflow-x: hidden;
     background-color: var(--noir);
     margin: 0;
@@ -27,10 +26,10 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     width:100vw;
     height:100vh;
-    background-image: url("/img/img_arriere_plan/titre/background.jpg");
+    background-image: url("../img/img_arriere_plan/titre/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%) brightness(150%) ;
@@ -38,6 +37,10 @@ header {
 
 p {
     filter:brightness(200%)
+}
+
+.titrehistoire {
+    margin-bottom: 1%;
 }
 
 .titrehistoire{
@@ -168,6 +171,7 @@ p {
 
 
 .containerfleche {
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -179,53 +183,119 @@ p {
     margin: 0;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
-    width:100vw;
+    width:auto;
     height:100vh;
-    
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: solid #f53434;
 }
 
 
 .chapitre1 {
-    background-image: url("/img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
-    background-size: cover;
-}
-.chapitre2 {
-    background-image: url("/img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
 }
 
+.chapitre2 {
+    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");  
+}
 
 .chapitre3 {
-    background-image: url("/img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.png");  
+    object-fit: cover;
+    background-position: bottom;
 }
 
 .chapitre4 {
-    background-image: url("/img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");  
 }
 
 .chapitre5 {
-    background-image: url("/img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.png");
 }
 
 .chapitre6 {
-    background-image: url("/img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");  
 }
 
 .chapitre7 {
-    background-image: url("/img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png");
-    background-size: cover;
+    background-image: url("../img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png"); 
 }
 
 .chapitre8 {
-    background-image: url("/img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png");
+    background-image: url("../img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png"); 
+}
+
+
+/*------------------------------------------------- page spritesheet ---------------------------------------------------*/
+
+.containersprite{
+    height:500vh;
+}
+.isScrolling .bgsprite{
+animation-play-state: running;
+}
+
+
+.couleurspritebg{
+    position: fixed;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gris);
+}
+
+
+.bgsprite{
+    height: 500px;
+    width: 500px;
     background-size: cover;
+    animation-duration:3s ;
+    animation-play-state: paused;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(60);
+    filter: drop-shadow( 0 0 100px var(--blanc)) brightness(10000%);
+}
+
+.bgsprite.un {
+    background-image: url("../img/img_elements_visuels/spritesheet/spritesheet_boule_grossit.png");
+    animation-name:bouleGrossit;
+}
+
+@keyframes bouleGrossit {
+    from { background-position: 0 0;}
+    to { background-position: 60000px 0 ;}
+    
+}
+
+
+
+
+.bgsprite.deux{
+    background-image: url("../img/img_elements_visuels/spritesheet/spritesheet_boule_clignotement.png");
+    animation-name:bouleClignottement;
+}
+
+@keyframes bouleClignottement {
+    from { background-position: 0 0;}
+    to { background-position: 60000px 0 ;}
+    
+}
+
+@media screen and (max-width: 800px) {
+    .bgsprite.un, .bgsprite.deux{
+        width:200px;
+        height: 200px;
+    }
 }
