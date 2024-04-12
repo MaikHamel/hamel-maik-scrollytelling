@@ -189,7 +189,7 @@ p {
 }
 
 .titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
-    width:auto;
+    width:100vw;
     height:100vh;
     margin:0;
     background-size: cover;
@@ -249,8 +249,7 @@ animation-play-state: running;
     width:100vw;
     height:100vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: var(--gris);
@@ -258,9 +257,10 @@ animation-play-state: running;
 
 
 .bgsprite{
-    height: 500px;
-    width: 500px;
-    background-size: cover;
+    width:50vh;
+    height:auto;
+    aspect-ratio: 1/1;
+    background-size: 6000% 100%;
     animation-duration:3s ;
     animation-play-state: paused;
     animation-iteration-count: infinite;
@@ -275,7 +275,7 @@ animation-play-state: running;
 
 @keyframes bouleGrossit {
     from { background-position: 0 0;}
-    to { background-position: 60000px 0 ;}
+    to { background-position: 6000% 0 ;}
     
 }
 
@@ -289,13 +289,14 @@ animation-play-state: running;
 
 @keyframes bouleClignottement {
     from { background-position: 0 0;}
-    to { background-position: 60000px 0 ;}
+    to { background-position: 6000% 0 ;}
     
 }
-
+/*
 @media screen and (max-width: 800px) {
     .bgsprite.un, .bgsprite.deux{
         width:200px;
         height: 200px;
     }
 }
+*/
