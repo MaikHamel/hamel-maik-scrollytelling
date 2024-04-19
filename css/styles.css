@@ -233,17 +233,25 @@ p {
     height:100vh;
 }
 
-.containerimage2perso{
+.web{
+    z-index: 7;
     position: absolute;
-    width: 50vw;
-    height: 50vh;
+    width:2px;
+    height:50vh;
+    background-color: #ffffff;
+}
+.image2monnstre{
+    z-index: 7;
+    position: absolute;
+    height: 55vh;
+    
 }
 .image2perso{
     z-index: 7;
     position: absolute;
-    width:50vw;
-    height: 100vh;
-
+    height: 40vh;
+    bottom: -20px;
+    margin-bottom: 0;
 }
 
 
@@ -286,19 +294,109 @@ p {
     background-position: bottom;
 }
 
+.image3perso {
+    z-index: 7;
+    position: absolute;
+    height: 40vh;
+    bottom: -10px;
+
+}
+
+.image3monstre{
+    width: 80vh;
+    position: absolute;
+}
+
+
+
+
 /* chapitre 4 */
 .chapitre4 {
     background-image: url("../img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");  
 }
+.image4perso{
+    z-index: 7;
+    position: absolute;
+    height: 40vh;
+    bottom: -10px;
+}
+
+.image4monstre{
+    width: 80vh;
+    position: absolute;
+    
+}
+
 
 /* chapitre 5 */
-.chapitre5 {
-    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.png");
+
+.containerdecontruction{
+    width:100vw;
+    height:100vh;
+    overflow: hidden;
 }
+
+.imageconstructiondevant{
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_avant_chapitre_5.png");
+    width:100vw;
+    height:100vh;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: 6;
+    
+
+}
+
+.image5perso{
+    z-index: 7;
+    position: absolute;
+    height: 40vh;
+    bottom: 0px;
+}
+
+.imageconstructionmilieu{
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.png");
+    width:100vw;
+   
+    height:100vh;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat-x;
+    position: absolute;
+    z-index: 3;
+}
+.imageconstructionarriere{
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_chapitre_5.png");
+    width:100vw;
+    height:100vh;
+    margin:0;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    background-repeat: repeat-x;
+    z-index: -3;
+}
+
 
 /* chapitre 6 */
 .chapitre6 {
     background-image: url("../img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");  
+}
+
+.image6monstre1, .image6monstre2, .image6monstre3, .image6monstre4, .image6monstre5, .image6monstre6, .image6monstre7 {
+    position: absolute;
+}
+
+.image6monstre1{
+    width: 30vh;;
+}
+
+.image6monstre2, .image6monstre3, .image6monstre4, .image6monstre5, .image6monstre6, .image6monstre7 {
+    width:20vh;
 }
 
 /* chapitre 7 */ 
@@ -306,9 +404,25 @@ p {
     background-image: url("../img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png"); 
 }
 
+.image7perso{
+    z-index: 7;
+    position: absolute;
+    height: 60vh;
+    bottom: -3px;
+
+}
+
 /* chapitre 8 */
 .chapitre8 {
     background-image: url("../img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png"); 
+}
+
+.image8perso{
+    z-index: 7;
+    position: absolute;
+    height: 70vh;
+    bottom: -3px;
+
 }
 
 
