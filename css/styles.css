@@ -204,6 +204,14 @@ p {
     background-image: url("../img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
 }
 
+@media screen and (min-width: 100vw){
+    .image1perso{
+        right:25vw;
+        
+    }
+
+}
+
 .image1perso{
     position: absolute;
     width:50vw;
@@ -232,19 +240,40 @@ p {
     width:100vw;
     height:100vh;
 }
+/*
 
 .web{
     z-index: 7;
     position: absolute;
     width:2px;
     height:50vh;
+    left:45.3vw;
     background-color: #ffffff;
 }
+*/
 .image2monnstre{
     z-index: 7;
     position: absolute;
     height: 55vh;
+    left:15vw;
     
+}
+
+@media screen and (max-width:100vw){
+    .image2monnstre{
+        left: 200vw;
+        
+    }
+
+}
+
+@media screen and (min-width:50vw) {
+
+    .image2monnstre{
+        left: 23vw;
+        
+    }
+
 }
 .image2perso{
     z-index: 7;
@@ -397,6 +426,13 @@ p {
 
 .image6monstre2, .image6monstre3, .image6monstre4, .image6monstre5, .image6monstre6, .image6monstre7 {
     width:20vh;
+}
+
+.image6perso{
+    z-index: 7;
+    position: absolute;
+    height: 70vh;
+    bottom: 0px;
 }
 
 /* chapitre 7 */ 
