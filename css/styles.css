@@ -204,13 +204,33 @@ p {
     background-image: url("../img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
 }
 
-@media screen and (min-width: 100vw){
+
+@media screen and (min-width:1000px) {
     .image1perso{
         right:25vw;
         
     }
 
 }
+
+@media screen and (max-width:1000px) {
+    .image1perso{
+        right:20vw;
+        
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .image1perso{
+        right:25vw;
+        
+    }
+    
+
+}
+
+
 
 .image1perso{
     position: absolute;
@@ -251,35 +271,56 @@ p {
     background-color: #ffffff;
 }
 */
-.image2monnstre{
+.image2monstre{
     z-index: 7;
     position: absolute;
     height: 55vh;
-    left:15vw;
     
 }
 
-@media screen and (max-width:100vw){
-    .image2monnstre{
-        left: 200vw;
-        
+
+
+@media screen and (min-width:1000px) {
+    .image2monstre{
+        left: 37vw;
+    }
+
+    .image2perso{
+        left:45vw;
     }
 
 }
 
-@media screen and (min-width:50vw) {
+@media screen and (max-width:1000px) {
+    .image2monstre{
+        left: 25vw;
+    }
 
-    .image2monnstre{
-        left: 23vw;
-        
+    .image2perso{
+        left:40vw;
     }
 
 }
+
+@media screen and (max-width:500px) {
+    .image2monstre{
+        left: 5vw;
+    }
+
+    .image2perso{
+        left:30vw;
+    }
+
+}
+
+
+
+
 .image2perso{
     z-index: 7;
     position: absolute;
     height: 40vh;
-    bottom: -20px;
+    bottom: -3vh;
     margin-bottom: 0;
 }
 
@@ -327,13 +368,48 @@ p {
     z-index: 7;
     position: absolute;
     height: 40vh;
-    bottom: -10px;
+    bottom: -2vh;
 
 }
 
 .image3monstre{
     width: 80vh;
     position: absolute;
+}
+
+
+@media screen and (min-width:1000px) {
+    .image3monstre{
+        left: 30vw;
+    }
+
+    .image3perso{
+        left:35vw;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+    .image3monstre{
+        left: 15vw;
+    }
+
+    .image3perso{
+        left:40vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .image3monstre{
+        left: 2vw;
+        width:70vh;
+    }
+
+    .image3perso{
+        left:30vw;
+    }
+
 }
 
 
@@ -347,13 +423,47 @@ p {
     z-index: 7;
     position: absolute;
     height: 40vh;
-    bottom: -10px;
+    bottom: -2vh;
 }
 
 .image4monstre{
     width: 80vh;
     position: absolute;
     
+}
+
+@media screen and (min-width:1000px) {
+    .image4monstre{
+        left: 20vw;
+    }
+
+    .image4perso{
+        left:20vw;
+}
+
+
+}
+
+@media screen and (max-width:1000px) {
+    .image4monstre{
+        left: 15vw;
+    }
+
+    .image4perso{
+        left:25vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .image4monstre{
+        left: 2vw;
+    }
+
+    .image4perso{
+        left:0vw;
+    }
+
 }
 
 
@@ -382,8 +492,36 @@ p {
 .image5perso{
     z-index: 7;
     position: absolute;
-    height: 40vh;
+    height: 50vh;
     bottom: 0px;
+}
+
+
+@media screen and (min-width:1000px) {
+   
+
+    .image5perso{
+        left:40vw;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+  
+
+    .image5perso{
+        left:35vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    
+
+    .image5perso{
+        left:30vw;
+    }
+
 }
 
 .imageconstructionmilieu{
@@ -431,8 +569,224 @@ p {
 .image6perso{
     z-index: 7;
     position: absolute;
-    height: 70vh;
+    height: 50vh;
     bottom: 0px;
+}
+
+
+@media screen and (max-width:1000px) {
+   
+
+    .image6perso{
+        left:40vw;
+    }
+    .image6monstre1{
+        left:35vw;
+        
+
+    }
+
+    .image6monstre2{
+        top: 41vh;
+        left: 0vw;
+       
+
+    }
+
+    .image6monstre3{
+        left: 0;
+       
+        top: 65vh;
+
+    }
+
+    .image6monstre4{
+        
+        
+        top: 40vh;
+        left: 58vh;
+
+    }
+
+    .image6monstre5{
+      
+        
+        top: 65vh;
+        left: 58vh;
+
+    }
+
+    .image6monstre6{
+        left: 0;
+        
+        top: 18vh;
+
+    }
+
+    .image6monstre7{
+        left: 58vh;
+        
+        top: 18vh;
+
+    }
+
+
+}
+
+
+@media screen and (min-width:600px) {
+   
+
+    .image6perso{
+        left:40vw;
+    }
+    .image6monstre1{
+        left:30vw;
+        
+
+    }
+
+    .image6monstre2{
+        top: 41vh;
+        left: 0vw;
+       
+
+    }
+
+    .image6monstre3{
+        left: 0;
+       
+        top: 65vh;
+
+    }
+
+    .image6monstre4{
+        
+        
+        top: 40vh;
+        left: 59vh;
+
+    }
+    
+    }
+
+
+@media screen and (min-width:700px) {
+   
+
+    .image6perso{
+        left:40vw;
+    }
+    .image6monstre1{
+        left:40vw;
+        
+
+    }
+
+    .image6monstre2{
+        top: 41vh;
+        left: 0vw;
+       
+
+    }
+
+    .image6monstre3{
+        left: 0;
+       
+        top: 65vh;
+
+    }
+
+    .image6monstre4{
+        
+        
+        top: 40vh;
+        left: 85vh;
+
+    }
+
+    .image6monstre5{
+      
+        
+        top: 65vh;
+        left: 85vh;
+
+    }
+
+    .image6monstre6{
+        left: 0;
+        
+        top: 18vh;
+
+    }
+
+    .image6monstre7{
+        left: 85vh;
+        
+        top: 18vh;
+
+    }
+
+
+}
+
+@media screen and (max-width:500px) {
+    .image6monstre1{
+        left:34vw;
+        width: 25vh;
+
+    }
+
+    .image6monstre2{
+        top: 35vh;
+        left: 0vw;
+        width: 15vh;
+
+    }
+
+    .image6monstre3{
+        left: 0;
+        width: 15vh;
+        top: 55vh;
+
+    }
+
+    .image6monstre4{
+        
+        width: 15vh;
+        top: 35vh;
+        left: 48vh;
+
+    }
+
+    .image6monstre5{
+        
+        width: 15vh;
+        top: 55vh;
+        left: 48vh;
+
+    }
+
+    .image6monstre6{
+        left: 0;
+        width: 15vh;
+        top: 18vh;
+
+    }
+
+    .image6monstre7{
+        left: 50vh;
+        width: 15vh;
+        top: 18vh;
+
+    }
+
+    .image6perso{
+        left:30vw;
+    }
+
+    
+
 }
 
 /* chapitre 7 */ 
@@ -444,7 +798,36 @@ p {
     z-index: 7;
     position: absolute;
     height: 60vh;
-    bottom: -3px;
+    bottom: -1vh;
+
+}
+
+
+@media screen and (min-width:1000px) {
+   
+
+    .image7perso{
+        left:40vw;
+    }
+
+    
+
+}
+
+@media screen and (max-width:1000px) {
+  
+
+    .image7perso{
+        left:35vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+
+    .image7perso{
+        left:30vw;
+    }
 
 }
 
@@ -457,9 +840,38 @@ p {
     z-index: 7;
     position: absolute;
     height: 70vh;
-    bottom: -3px;
+    bottom: -3vh;
 
 }
+
+
+@media screen and (min-width:1000px) {
+
+    .image8perso{
+        left:20vw;
+}
+
+
+}
+
+@media screen and (max-width:1000px) {
+    
+
+    .image8perso{
+        left:25vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+   
+
+    .image8perso{
+        left:0vw;
+    }
+
+}
+
 
 
 /*------------------------------------------------- page spritesheet ---------------------------------------------------*/
