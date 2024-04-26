@@ -5,6 +5,11 @@
     margin: 0;
 }
 
+img {
+    
+    border: 1px solid var(--rougefonce);
+}
+
 
 :root {
     --blanc: #FFFFFF;
@@ -23,6 +28,7 @@ body{
     margin: 0;
 }
 header {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,11 +45,13 @@ p {
     filter:brightness(200%)
 }
 
+
 .titrehistoire {
     margin-bottom: 1%;
 }
 
 .titrehistoire{
+    
     font-family: "PT Serif", serif;
     font-size: 80px;
     font-weight: 400;
@@ -197,9 +205,126 @@ p {
     background-position: center;
     background-repeat: no-repeat;
     border: solid #f53434;
+    overflow: hidden;
 }
 
-/* chapitre 1 */
+/*--------------------titre -------------------------------*/
+
+.titremorph{
+
+    position: absolute;
+    font-family:"Shadows Into Light";
+    font-size: 10vh;
+    color:var(--blanc);
+
+}
+
+.svgtrace{
+    position: absolute;
+    top:10vh;
+}
+
+.titre1perso{
+    position: absolute;
+    
+    width:28vw;
+    height:28vh;
+    
+}
+
+@media screen and (min-width:1000px) {
+    .titremorph{
+        text-align: center;
+        top:37vh;
+        font-size: 10vh;
+        left:0;
+        right:0;
+
+       
+    
+    }
+    .Rmorph{
+        position: absolute;
+        left:40vw;
+        right:0;
+        top: 35.5vh;
+        width:23vw;
+        height:23vh;
+        filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
+    }
+
+    .titre1perso{
+        top:35vh;
+        right:40vw;
+    }
+
+}
+
+@media screen and (max-width:1000px) {
+
+    .titremorph{
+        position: absolute;
+        text-align: center;
+        top:25vh;
+        left:0;
+        right:0;
+        font-size: 13vh;
+
+       
+    
+    }
+    .Rmorph{
+        position: absolute;
+        left:45vw;
+        right:0;
+        top: 35.5vh;
+        width:26vw;
+        height:26vh;
+        filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
+    }
+
+    .titre1perso{
+        top:35vh;
+        left:30vw;
+    }
+
+}
+
+@media screen and (max-width:500px) {
+    .titremorph{
+        position: absolute;
+        text-align: center;
+        top:15vh;
+        left:0;
+        right:0;
+        font-size: 13vh;
+        
+       
+    
+    }
+
+    .Rmorph{
+        
+        position: absolute;
+        left:45vw;
+        right:0;
+        top: 35vh;
+        width:28vw;
+        height:28vh;
+        filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
+    }
+    
+    
+    .titre1perso{
+        top:35vh;
+        right:50vh;
+    }
+    
+
+}
+
+
+/*-----------------------------chapitre 1------------------------------*/
 .chapitre1 {
     background-image: url("../img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
 }
@@ -234,11 +359,11 @@ p {
 
 .image1perso{
     position: absolute;
-    width:50vw;
-    height:50vh;
+    width:25vw;
+    height:25vh;
 }
 
-/* chapitre 2 */
+/*---------------------chapitre 2----------------------------------*/
 .containerparallax{
     background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
     width:100vw;
@@ -276,6 +401,7 @@ p {
     position: absolute;
     height: 55vh;
     
+    
 }
 
 
@@ -283,6 +409,7 @@ p {
 @media screen and (min-width:1000px) {
     .image2monstre{
         left: 37vw;
+        top:10vh;
     }
 
     .image2perso{
@@ -294,6 +421,7 @@ p {
 @media screen and (max-width:1000px) {
     .image2monstre{
         left: 25vw;
+        top:5vh;
     }
 
     .image2perso{
@@ -305,6 +433,7 @@ p {
 @media screen and (max-width:500px) {
     .image2monstre{
         left: 5vw;
+        top:5vh;
     }
 
     .image2perso{
@@ -357,7 +486,7 @@ p {
     background-repeat: repeat-x;
 
 }
-/* chapitre 3 */
+/*------------------------------chapitre 3-------------------------------------*/
 .chapitre3 {
     background-image: url("../img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.png");  
     object-fit: cover;
@@ -375,6 +504,7 @@ p {
 .image3monstre{
     width: 80vh;
     position: absolute;
+    border:solid 1px aqua;
 }
 
 
@@ -391,7 +521,7 @@ p {
 
 @media screen and (max-width:1000px) {
     .image3monstre{
-        left: 15vw;
+        right: 15vw;
     }
 
     .image3perso{
@@ -402,7 +532,7 @@ p {
 
 @media screen and (max-width:500px) {
     .image3monstre{
-        left: 2vw;
+        left: -9vw;
         width:70vh;
     }
 
@@ -415,7 +545,7 @@ p {
 
 
 
-/* chapitre 4 */
+/*----------------------------------------chapitre 4---------------------------------------*/
 .chapitre4 {
     background-image: url("../img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");  
 }
@@ -429,6 +559,7 @@ p {
 .image4monstre{
     width: 80vh;
     position: absolute;
+    
     
 }
 
@@ -467,7 +598,7 @@ p {
 }
 
 
-/* chapitre 5 */
+/*------------------------------------------chapitre 5-----------------------------------------*/
 
 .containerdecontruction{
     width:100vw;
@@ -504,6 +635,11 @@ p {
         left:40vw;
     }
 
+    .bgsprite.deux{
+        width:10vw;
+        width:10vw;
+    }
+
 }
 
 @media screen and (max-width:1000px) {
@@ -513,6 +649,11 @@ p {
         left:35vw;
     }
 
+    .bgsprite.deux{
+        width:20vw;
+        height:20vw;
+    }
+
 }
 
 @media screen and (max-width:500px) {
@@ -520,6 +661,11 @@ p {
 
     .image5perso{
         left:30vw;
+    }
+
+    .bgsprite.deux{
+        width:25vw;
+        height:25vw;
     }
 
 }
@@ -536,6 +682,15 @@ p {
     position: absolute;
     z-index: 3;
 }
+
+.rectanglecontainer{
+    position: absolute;
+    z-index: 5;
+    top:60vh;
+    width:100vw;
+    height:14vh;
+    background-color: var(--noir);
+}
 .imageconstructionarriere{
     background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_chapitre_5.png");
     width:100vw;
@@ -549,7 +704,7 @@ p {
 }
 
 
-/* chapitre 6 */
+/*----------------------------------------------------chapitre 6-------------------------------------*/
 .chapitre6 {
     background-image: url("../img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");  
 }
@@ -574,14 +729,15 @@ p {
 }
 
 
-@media screen and (max-width:1000px) {
+@media screen and (min-width:1000px) {
    
 
     .image6perso{
         left:40vw;
     }
     .image6monstre1{
-        left:35vw;
+        top:8.5vh;
+        left:39vw;
         
 
     }
@@ -604,7 +760,7 @@ p {
         
         
         top: 40vh;
-        left: 58vh;
+        right: 0;
 
     }
 
@@ -612,7 +768,8 @@ p {
       
         
         top: 65vh;
-        left: 58vh;
+      
+        right: 0;
 
     }
 
@@ -624,8 +781,8 @@ p {
     }
 
     .image6monstre7{
-        left: 58vh;
         
+        right: 0;
         top: 18vh;
 
     }
@@ -633,8 +790,7 @@ p {
 
 }
 
-
-@media screen and (min-width:600px) {
+@media screen and (max-width:1000px) {
    
 
     .image6perso{
@@ -642,6 +798,7 @@ p {
     }
     .image6monstre1{
         left:30vw;
+        top:7vh;
         
 
     }
@@ -664,44 +821,7 @@ p {
         
         
         top: 40vh;
-        left: 59vh;
-
-    }
-    
-    }
-
-
-@media screen and (min-width:700px) {
-   
-
-    .image6perso{
-        left:40vw;
-    }
-    .image6monstre1{
-        left:40vw;
-        
-
-    }
-
-    .image6monstre2{
-        top: 41vh;
-        left: 0vw;
-       
-
-    }
-
-    .image6monstre3{
-        left: 0;
-       
-        top: 65vh;
-
-    }
-
-    .image6monstre4{
-        
-        
-        top: 40vh;
-        left: 85vh;
+        right: 0;
 
     }
 
@@ -709,7 +829,8 @@ p {
       
         
         top: 65vh;
-        left: 85vh;
+      
+        right: 0;
 
     }
 
@@ -721,8 +842,8 @@ p {
     }
 
     .image6monstre7{
-        left: 85vh;
         
+        right: 0;
         top: 18vh;
 
     }
@@ -731,15 +852,17 @@ p {
 }
 
 @media screen and (max-width:500px) {
+    
     .image6monstre1{
-        left:34vw;
+        left:30vw;
+        top:12vh;
         width: 25vh;
 
     }
 
     .image6monstre2{
         top: 35vh;
-        left: 0vw;
+        left: 0;
         width: 15vh;
 
     }
@@ -755,7 +878,7 @@ p {
         
         width: 15vh;
         top: 35vh;
-        left: 48vh;
+        right: 0vh;
 
     }
 
@@ -763,7 +886,7 @@ p {
         
         width: 15vh;
         top: 55vh;
-        left: 48vh;
+        right: 0vh;
 
     }
 
@@ -775,7 +898,7 @@ p {
     }
 
     .image6monstre7{
-        left: 50vh;
+        right: 0vh;
         width: 15vh;
         top: 18vh;
 
@@ -789,7 +912,7 @@ p {
 
 }
 
-/* chapitre 7 */ 
+/*-------------------------------------------------------------------chapitre 7---------------------------------------*/ 
 .chapitre7 {
     background-image: url("../img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png"); 
 }
@@ -831,7 +954,7 @@ p {
 
 }
 
-/* chapitre 8 */
+/*-----------------------------------------------chapitre 8-------------------------------------*/
 .chapitre8 {
     background-image: url("../img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png"); 
 }
@@ -849,7 +972,15 @@ p {
 
     .image8perso{
         left:20vw;
-}
+    }
+
+    .bgsprite.un{
+        position: absolute;
+        left:50vw;
+        width:30vw;
+        height:30vw;
+
+    }
 
 
 }
@@ -858,7 +989,14 @@ p {
     
 
     .image8perso{
-        left:25vw;
+        left:10vw;
+        height: 50vh;
+    }
+    .bgsprite.un{
+
+        width:40vw;
+        height:40vw;
+
     }
 
 }
@@ -868,32 +1006,97 @@ p {
 
     .image8perso{
         left:0vw;
+        height: 50vh;
+    
+        
     }
+    .bgsprite.un{
+
+        width:50vw;
+        height:50vw;
+
+    }
+
+}
+
+
+/*----------------------------------Textes------------------------------------------------*/
+
+.texte1, .texte2, .texte3, .texte4, .texte5, .texte6, .texte7, .texte8{
+    position: absolute;
+    text-align: center;
+    right: 0;
+    left: 0;
+    z-index: 7;
+    mix-blend-mode:hard-light;
+    filter:brightness(100%);
+    color: var(--blanc);
+    font-family:'Shadows Into Light';
+    font-size: 4vh;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+}
+
+
+@media screen and (min-width:1000px) {
+   
+
+    .texte1, .texte2, .texte3, .texte4, .texte5, .texte6, .texte7, .texte8{
+        
+        font-size: 7vh;
+    }
+
+    
+
+}
+
+@media screen and (max-width:1000px) {
+    .texte1, .texte2, .texte3, .texte4, .texte5, .texte6, .texte7, .texte8{
+        
+        font-size: 4vh;
+    }
+
+
+}
+
+
+@media screen and (max-width:500px) {
+    .texte1, .texte2, .texte3, .texte4, .texte5, .texte6, .texte7, .texte8{
+        
+        font-size: 4vh;
+    }
+    
 
 }
 
 
 
 /*------------------------------------------------- page spritesheet ---------------------------------------------------*/
-
+/*
 .containersprite{
-    height:500vh;
+   width:100vw;
+   height:100vh;
 }
+*/
+
 .isScrolling .bgsprite{
 animation-play-state: running;
 }
 
 
 .couleurspritebg{
-    position: fixed;
+    position: absolute;
+    z-index: 7;
     width:100vw;
     height:100vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: var(--gris);
+    
+    
 }
+
 
 
 .bgsprite{
