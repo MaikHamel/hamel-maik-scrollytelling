@@ -244,3 +244,9 @@ let chapitre8 = gsap.timeline()
     duration:4,
     ease: "easeIn",
 },'-=3')
+.fromTo(".fin",{
+    opacity:"0",
+},{
+    opacity:"1",
+    duration:4,
+},'+=4')

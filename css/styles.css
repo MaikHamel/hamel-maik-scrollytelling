@@ -41,8 +41,34 @@ header {
     filter: grayscale(100%) brightness(150%) ;
 }
 
+footer{
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
 p {
     filter:brightness(200%)
+}
+
+ul.technique-gsap{
+    background: rgba(0,0,0,0.3);
+    color: white;
+    font-size: 10px;
+    font-family: monospace;
+    font-weight: 400;
+    width: auto;
+    display: inline-block;
+    padding: 10px 20px 12px 20px;
+    margin: 0;
+    max-width: 300px;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+ul.technique-gsap li{
+    margin: 5px 0;
 }
 
 
@@ -196,7 +222,7 @@ p {
     justify-content: center;
 }
 
-.titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8 {
+.titre, .chapitre1, .chapitre2, .chapitre3, .chapitre4, .chapitre5, .chapitre6, .chapitre7, .chapitre8{
     width:100vw;
     height:100vh;
     margin:0;
@@ -207,6 +233,17 @@ p {
     border: solid #f53434;
     overflow: hidden;
 }
+.fin {
+    width:100vw;
+    height:100vh;
+    margin:0;
+    position: absolute;
+    background-color: var(--noir);
+    border: solid #f53434;
+    overflow: hidden;
+    z-index: 7;
+}
+
 
 /*--------------------titre -------------------------------*/
 
@@ -1068,6 +1105,28 @@ p {
 
 }
 
+.textefin{
+    position: absolute;
+    text-align: center;
+    top:45vh;
+    right: 0;
+    left: 0;
+    z-index: 7;
+    mix-blend-mode:hard-light;
+    filter:brightness(100%);
+    color: var(--blanc);
+    font-family:'Shadows Into Light';
+    font-size: 10vh;
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
+
+}
+
+.textefooter{
+    color: var(--blanc);
+    font-family:"Overlock" ;
+    text-align: center;
+    font-size: 13px;
+}
 
 
 /*------------------------------------------------- page spritesheet ---------------------------------------------------*/
