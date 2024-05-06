@@ -1,6 +1,16 @@
 
 let mm = gsap.matchMedia();
 
+gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(DrawSVGPlugin);
+gsap.registerPlugin(MorphSVGPlugin);
+gsap.registerPlugin(MotionPathPlugin);
+gsap.set(".svgtrace",{drawSVG:"0% 0%"});
+
+
+
+
+
 let fleche1 = document.querySelectorAll('.flecheimg');
 
 gsap.fromTo(['.flecheimg'], {
@@ -31,17 +41,41 @@ let minuteur = setTimeout(() => {
 },1000);
 
 */
+let textdraw = gsap.fromTo(".svgtrace",{
+    drawSVG:"0% 0%"
+},{
+    paused:true,
+    duration:4,
+    drawSVG:"0% 100%",
+    ease: "sine.inOut",
+})
 
-let titre = gsap.timeline()
+let titre = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        scrub: true,
+        start: "1% top",
+        end: "500% bottom",
+        pin: true,
+        trigger:'.titre'
+        
+    }
+})
+
+
 .fromTo(".titremorph",{
    color: '#000000',
 },{
     duration:4, 
     repeat: 1,
-    ease: "sine.inOut",
+    ease: "none",
     color: '#FFFFFF',
     yoyo:true,
+    onStart: () => {
+        textdraw.play()
+    }
 })
+
 .fromTo(".Rmorph",
     {
         opacity:"0",
@@ -52,13 +86,30 @@ let titre = gsap.timeline()
     ease: "sine.inOut",
     yoyo:false, 
 })
-.to(".titre1perso",{
+
+.to(".Rmorphpath", {
+    morphSVG: ".titre1persopath"
+})
+
+
+
+.to(".Rmorph",{
     y: "65vh",
     ease: "none",
 })
 
 
-let chapitre1 = gsap.timeline()
+let chapitre1 = gsap.timeline({
+    scrollTrigger: {
+        markers: true,
+        start: "3% top",
+        end: "300% bottom",
+        pin: true,
+        trigger:'.chapitre1',
+        toggleActions: "play reverse complete reset"
+    }
+}
+)
 .fromTo(".texte1",{
     opacity:"0",
     color: '#000000',
@@ -81,29 +132,78 @@ let chapitre1 = gsap.timeline()
 
 })
 
-let chapitre2 = gsap.timeline()
+let chapitre2 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "500% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre2',
+            
+        }
+    }
+)
+.fromTo(".imageparallaxdevant",{
+    x:"400"
+},{
+    x:"-300",
+    ease:"none",
+    duration:2,
+
+},'<')
+.fromTo(".imageparallaxmilieu",{
+    x:"200"
+},{
+    x:"-100",
+    ease:"none",
+    duration:3,
+
+},"<")
+.fromTo(".imageparallaxarriere",{
+    x:"100"
+},{
+    x:"-50",
+    ease:"none",
+    duration:3,
+
+},"<")
+
 .fromTo(".image2perso",{
     x:"-60vw",
 },{
     duration:4, 
     ease: "easeIn",
     x:"5vw",
-})
+},"<")
 .from(".image2monstre",{
     y:"-70vh",
     duration:3,
     ease: "easeIn",
 
-},'-=3')
+},'<')
 .fromTo(".texte2",{
     opacity:"0",
 },{
     opacity:"1",
     duration:4,
     ease: "easeIn",
-},)
+},'<')
 
-let chapitre3 = gsap.timeline()
+let chapitre3 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "500% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre3',
+            
+        }
+    }
+)
 .fromTo(".texte3",{
     opacity:"0",
 },{
@@ -116,7 +216,7 @@ let chapitre3 = gsap.timeline()
 },{
     duration:9,
     ease:"none",
-    x:"70vw"
+    x:"100vw"
 })
 .fromTo(".image3monstre",{
     opacity:"0",
@@ -128,7 +228,19 @@ let chapitre3 = gsap.timeline()
     yoyo:true,
 },'-=8')
 
-let chapitre4 = gsap.timeline()
+let chapitre4 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "500% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre4',
+            
+        }
+    }
+)
 .fromTo(".image4perso",{
     x:"-70vw",
 },{
@@ -151,31 +263,43 @@ let chapitre4 = gsap.timeline()
     ease: "easeIn",
 },'-=3')
 
-let chapitre5 = gsap.timeline()
+let chapitre5 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "1000% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre5',
+            
+        }
+    }
+)
 
 .from(".imageconstructiondevant",{
-    duration:4,
+    duration:3,
     x:"-100vw",
-})
+},'<')
 
 .from(".imageconstructionmilieu",{
-    duration:4,
+    duration:3,
     x:"100vw",
 },'<')
 
 .from(".rectanglecontainer",{
-    duration:4,
+    duration:3,
     y:"-100vw",
 },'<')
 
 .from(".image5perso",{
-    duration:4,
+    duration:3,
     y:"-100vw",
     x:"-100vw",
 },'<')
 
 .from(".couleurspritebg",{
-    duration:4,
+    duration:3,
     y:"100vw",
     x:"100vw",
 },'<')
@@ -187,9 +311,21 @@ let chapitre5 = gsap.timeline()
     ease: "easeIn",
 },'-=3')
 
-let chapitre6 = gsap.timeline()
+let chapitre6 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "500% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre6',
+            
+        }
+    }
+)
 .fromTo(".image6perso",{
-    x:"-60vw",
+    x:"-80vw",
 },{
     duration:4, 
     ease: "easeIn",
@@ -202,8 +338,113 @@ let chapitre6 = gsap.timeline()
     duration:4,
     ease: "easeIn",
 },'-=3')
+.from('.image6monstre7',{
+    x:"150",
+})
+.from('.image6monstre2',{
+    x:"-150",
+})
+.from('.image6monstre4',{
+    x:"150",
+})
+.from('.image6monstre3',{
+    x:"-150",
+})
+.from('.image6monstre6',{
+    x:"-150",
+})
 
-let chapitre7 = gsap.timeline()
+.from('.image6monstre5',{
+    x:"150",
+})
+
+.fromTo(".image6monstre1",{
+    y:"-40vh",
+},{
+    y:"10",
+    ease: "easeInOut",
+    yoyo:true,
+    repeat:1,
+})
+
+.to('.image6monstre1',{
+    rotation:90,
+    duration: 2,
+})
+.to('.image6monstre1',{
+   
+    motionPath: {
+        align:'.ligne_motion_1_path',
+        alignOrigin: [0.5, 0.5],
+        path:'.ligne_motion_1_path',
+        autoRotate: true,
+        start:0,
+        end:1,
+    },
+    
+    duration: 2,
+},'<')
+/*
+.to('.image6monstre2',{
+    motionPath: {
+        align:'.motion_ligne_1_path',
+        alignOrigin: [0.5, 0.5],
+        path:'.motion_ligne_1_path',
+        autoRotate: true,
+        start:0,
+        end:1,
+    },
+    duration: 2,
+})
+.to('.image6monstre3',{
+    motionPath: {
+        align:'.motion_ligne_2_path',
+        alignOrigin: [0.5, 0.5],
+        path:'.motion_ligne_2_path',
+        autoRotate: true,
+        start:0,
+        end:1,
+    },
+    duration: 2,
+})
+.to('.image6monstre6',{
+    motionPath: {
+        align:'.motion_ligne_3_path',
+        alignOrigin: [0.5, 0.5],
+        path:'.motion_ligne_3_path',
+        autoRotate: true,
+        start:0,
+        end:1,
+    },
+    duration: 2,
+})
+.to('.image6monstre5',{
+    
+    motionPath: {
+        align:'.motion_ligne_4_path',
+        alignOrigin: [0.5, 0.5],
+        path:'.motion_ligne_4_path',
+        autoRotate: true,
+        start:0,
+        end:1,
+    },
+    duration: 2,
+})
+*/
+
+let chapitre7 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "500% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre7',
+            
+        }
+    }
+)
 .from(".image7perso",{
     y:"60vw",
     duration:4, 
@@ -217,9 +458,34 @@ let chapitre7 = gsap.timeline()
     ease: "easeIn",
 },'-=3')
 
-let chapitre8 = gsap.timeline()
 
-.fromTo(".bgsprite.un",{
+let fin = gsap.fromTo(".textefin",{
+    opacity:"0"
+},{
+    paused:true,
+    opacity:"1",
+    duration:4,
+    yoyo:true,
+    repeat:-1,
+
+})
+
+
+let chapitre8 = gsap.timeline(
+    {
+        scrollTrigger: {
+            markers: true,
+            start: "3% top",
+            end: "1000% bottom",
+            scrub: true,
+            pin: true,
+            trigger:'.chapitre8',
+            
+        }
+    }
+    
+)
+.fromTo(".couleurspritebg2",{
     opacity:"0",
     scaleY:0,
     scaleX:0,
@@ -227,7 +493,7 @@ let chapitre8 = gsap.timeline()
     scaleY:1,
     scaleX:1,
     opacity:"1",
-    duration:7,
+    duration:10,
     ease: "easeIn",
 })
 .from(".image8perso",{
@@ -249,4 +515,14 @@ let chapitre8 = gsap.timeline()
 },{
     opacity:"1",
     duration:4,
+    onStart: () => {
+        fin.play()
+    }
 },'+=4')
+
+
+
+
+
+
+
