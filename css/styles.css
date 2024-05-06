@@ -76,6 +76,16 @@ ul.technique-gsap li{
     margin-bottom: 1%;
 }
 
+
+.svgtrace{
+    stroke-width: 200px;
+    stroke: #ffffff;
+    
+    
+}
+
+
+
 .titrehistoire{
     
     font-family: "PT Serif", serif;
@@ -107,6 +117,14 @@ ul.technique-gsap li{
     flex-direction: column;
     width:150px;
     height:150px;
+}
+
+@media screen and (min-width: 1500px){
+    .fleche img {
+        width: 8vh;
+        height: 8vh;
+    }
+    
 }
 
 @media screen and (max-width: 1500px){
@@ -173,10 +191,12 @@ ul.technique-gsap li{
 
 }
 
+
+
 @media screen and (max-width: 500px) {
     .titrehistoire{
         font-family: "PT Serif", serif;
-        font-size: 80px;
+        font-size: 50px;
         font-weight: 400;
         font-style: normal;
         width:90vw;
@@ -261,13 +281,24 @@ ul.technique-gsap li{
     top:10vh;
 }
 
-.titre1perso{
+
+
+/*
+.Rmorphcontainer{
     position: absolute;
-    
-    width:28vw;
-    height:28vh;
-    
+    width:10vw;
+    height:10vh;
+    background-color: #f53434;
+
 }
+*/
+
+.titre1persopath{
+    visibility: hidden;
+    width:10vw;
+    height:10vh; 
+}
+
 
 @media screen and (min-width:1000px) {
     .titremorph{
@@ -280,51 +311,92 @@ ul.technique-gsap li{
        
     
     }
+    
     .Rmorph{
         position: absolute;
         left:40vw;
         right:0;
         top: 35.5vh;
-        width:23vw;
-        height:23vh;
+        width:20vw;
         filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
     }
+    
 
     .titre1perso{
         top:35vh;
-        right:40vw;
+        right:38vw;
+        
     }
 
 }
 
-@media screen and (max-width:1000px) {
 
+@media screen and (max-width:1000px) and (min-width:700px) {
     .titremorph{
         position: absolute;
         text-align: center;
-        top:25vh;
+        top:15vh;
         left:0;
         right:0;
         font-size: 13vh;
-
+        
        
     
     }
+
     .Rmorph{
+        
         position: absolute;
-        left:45vw;
+        left:35vw;
         right:0;
-        top: 35.5vh;
-        width:26vw;
-        height:26vh;
+        top: 35vh;
+        width:30vw;
+        
         filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
     }
-
     .titre1perso{
-        top:35vh;
-        left:30vw;
+        top:30vh;
+        right:48vh;
+        width:26vw;
+        height:26vh;
+    }
+    
+    
+
+}
+
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .titremorph{
+        position: absolute;
+        text-align: center;
+        top:15vh;
+        left:0;
+        right:0;
+        font-size: 13vh;
+        
+       
+    
     }
 
+    .Rmorph{
+        
+        position: absolute;
+        left:30vw;
+        right:0;
+        top: 35vh;
+        width:40vw;
+        
+        filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
+    }
+    
+    
+    .titre1perso{
+        top:30vh;
+        right:38vh;
+        width:28vw;
+        height:28vh;
+    }
 }
 
 @media screen and (max-width:500px) {
@@ -341,23 +413,28 @@ ul.technique-gsap li{
     }
 
     .Rmorph{
-        
         position: absolute;
-        left:45vw;
-        right:0;
+        left:25vw;
         top: 35vh;
-        width:28vw;
-        height:28vh;
+        width:50vw;
+      
+        background-size:auto;
         filter: invert(99%) sepia(19%) saturate(147%) hue-rotate(170deg) brightness(112%) contrast(100%);
     }
-    
-    
-    .titre1perso{
-        top:35vh;
-        right:50vh;
+    .titre1persopath{
+        width:10vw;
+        background-color: #f53434;
     }
     
-
+    .titre1perso{
+        top:29vh;
+        right:30vh;
+        width:28vw;
+        height:28vh;
+        
+    }
+    
+   
 }
 
 
@@ -454,7 +531,7 @@ ul.technique-gsap li{
     }
 
 }
-
+/*
 @media screen and (max-width:1000px) {
     .image2monstre{
         left: 25vw;
@@ -466,6 +543,33 @@ ul.technique-gsap li{
     }
 
 }
+
+*/
+@media screen and (max-width:1000px) and (min-width:700px) {
+    .image2monstre{
+        left: 26vw;
+        right: 20vw;
+        top:5vh;
+    }
+
+    .image2perso{
+        left:40vw;
+    }
+
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .image2monstre{
+        left: 23vw;
+        top:5vh;
+    }
+
+    .image2perso{
+        left:40vw;
+    }
+
+}
+
 
 @media screen and (max-width:500px) {
     .image2monstre{
@@ -482,6 +586,9 @@ ul.technique-gsap li{
 
 
 
+
+
+
 .image2perso{
     z-index: 7;
     position: absolute;
@@ -494,10 +601,10 @@ ul.technique-gsap li{
 .imageparallaxdevant{
     z-index: 6;
     background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_proche__chapitre_2.png");
-    width:100vw;
+    width:400vw;
     height:100vh;
     margin:0;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: repeat-x;
 }
@@ -505,20 +612,20 @@ ul.technique-gsap li{
 .imageparallaxmilieu{
     z-index: 3;
     background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_milieu__chapitre_2.png");
-    width:100vw;
+    width:400vw;
     height:100vh;
     margin-top:0;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: repeat-x;
 
 }
 .imageparallaxarriere{
     background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
-    width:100vw;
+    width:400vw;
     height:100vh;
     margin:0;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: repeat-x;
 
@@ -547,6 +654,7 @@ ul.technique-gsap li{
 
 @media screen and (min-width:1000px) {
     .image3monstre{
+        top:10vh;
         left: 30vw;
     }
 
@@ -555,6 +663,7 @@ ul.technique-gsap li{
     }
 
 }
+/*
 
 @media screen and (max-width:1000px) {
     .image3monstre{
@@ -566,11 +675,31 @@ ul.technique-gsap li{
     }
 
 }
+*/
+
+@media screen and (max-width:1000px) and (min-width:700px) {
+    .image3monstre{
+        right: 10vw;
+        top:5vh;
+    }
+
+}
+
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    .image3monstre{
+        left: 5vw;
+        top:5vh;
+    }
+
+
+}
 
 @media screen and (max-width:500px) {
     .image3monstre{
-        left: -9vw;
-        width:70vh;
+        top:10vh;
+        right: 4vw;
+        width:60vh;
     }
 
     .image3perso{
@@ -602,6 +731,7 @@ ul.technique-gsap li{
 
 @media screen and (min-width:1000px) {
     .image4monstre{
+        top:10vh;
         left: 20vw;
     }
 
@@ -614,6 +744,7 @@ ul.technique-gsap li{
 
 @media screen and (max-width:1000px) {
     .image4monstre{
+        top:7vh;
         left: 15vw;
     }
 
@@ -683,7 +814,7 @@ ul.technique-gsap li{
   
 
     .image5perso{
-        left:35vw;
+        left:37vw;
     }
 
     .bgsprite.deux{
@@ -725,7 +856,7 @@ ul.technique-gsap li{
     z-index: 5;
     top:60vh;
     width:100vw;
-    height:14vh;
+    height:25vh;
     background-color: var(--noir);
 }
 .imageconstructionarriere{
@@ -770,11 +901,12 @@ ul.technique-gsap li{
    
 
     .image6perso{
-        left:40vw;
+        left:47vw;
     }
     .image6monstre1{
         top:8.5vh;
-        left:39vw;
+        left:45vw;
+        
         
 
     }
@@ -826,7 +958,7 @@ ul.technique-gsap li{
 
 
 }
-
+/*
 @media screen and (max-width:1000px) {
    
 
@@ -887,11 +1019,131 @@ ul.technique-gsap li{
 
 
 }
+*/
+
+@media screen and (max-width:1000px) and (min-width:700px) {
+    .image6perso{
+        left:42vw;
+    }
+    .image6monstre1{
+        left:40vw;
+        top:7vh;
+        
+
+    }
+
+    .image6monstre2{
+        top: 41vh;
+        left: 0vw;
+       
+
+    }
+
+    .image6monstre3{
+        left: 0;
+       
+        top: 65vh;
+
+    }
+
+    .image6monstre4{
+        
+        
+        top: 40vh;
+        right: 0;
+
+    }
+
+    .image6monstre5{
+      
+        
+        top: 65vh;
+      
+        right: 0;
+
+    }
+
+    .image6monstre6{
+        left: 0;
+        
+        top: 18vh;
+
+    }
+
+    .image6monstre7{
+        
+        right: 0;
+        top: 18vh;
+
+    }
+
+}
+
+@media screen and (max-width:700px) and (min-width:500px) {
+    
+
+    .image6perso{
+        left:40vw;
+    }
+    .image6monstre1{
+        left:35vw;
+        top:7vh;
+        
+
+    }
+
+    .image6monstre2{
+        top: 41vh;
+        left: 0vw;
+       
+
+    }
+
+    .image6monstre3{
+        left: 0;
+       
+        top: 65vh;
+
+    }
+
+    .image6monstre4{
+        
+        
+        top: 40vh;
+        right: 0;
+
+    }
+
+    .image6monstre5{
+      
+        
+        top: 65vh;
+      
+        right: 0;
+
+    }
+
+    .image6monstre6{
+        left: 0;
+        
+        top: 18vh;
+
+    }
+
+    .image6monstre7{
+        
+        right: 0;
+        top: 18vh;
+
+    }
+
+}
+
 
 @media screen and (max-width:500px) {
     
     .image6monstre1{
-        left:30vw;
+        left:33vw;
         top:12vh;
         width: 25vh;
 
@@ -1064,6 +1316,7 @@ ul.technique-gsap li{
     text-align: center;
     right: 0;
     left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 7;
     mix-blend-mode:hard-light;
     filter:brightness(100%);
@@ -1100,6 +1353,7 @@ ul.technique-gsap li{
     .texte1, .texte2, .texte3, .texte4, .texte5, .texte6, .texte7, .texte8{
         
         font-size: 4vh;
+      
     }
     
 
@@ -1128,6 +1382,27 @@ ul.technique-gsap li{
     font-size: 13px;
 }
 
+/*----------------------motion path--------------*/
+
+.ligne_motion_1 {
+    position:absolute;
+    top:0vh;
+    left:50vw;
+    width:100vw;
+    height:100vh;
+    visibility: hidden;
+
+}
+.ligne_motion_1_path {
+    position:absolute;
+    top:0vh;
+    left:50vw;
+    width:100vw;
+    height:100vh;
+    visibility: hidden;
+
+}
+
 
 /*------------------------------------------------- page spritesheet ---------------------------------------------------*/
 /*
@@ -1142,7 +1417,7 @@ animation-play-state: running;
 }
 
 
-.couleurspritebg{
+.couleurspritebg, .couleurspritebg2{
     position: absolute;
     z-index: 7;
     width:100vw;
