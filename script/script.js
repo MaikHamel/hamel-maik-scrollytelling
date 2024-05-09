@@ -2,8 +2,10 @@
 let mm = gsap.matchMedia();
 
 gsap.registerPlugin(ScrollTrigger);
+/*
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
+*/
 gsap.registerPlugin(MotionPathPlugin);
 gsap.set(".svgtrace",{drawSVG:"0% 0%"});
 
@@ -34,13 +36,8 @@ window.addEventListener('scroll', () => {
         corps.classList.remove("isScrolling")
     },100);
 });
-/*
-let minuteur = setTimeout(() => {
-    corps.classList.remove("isScrolling")
-    console.log("allo")
-},1000);
 
-*/
+/*
 let textdraw = gsap.fromTo(".svgtrace",{
     drawSVG:"0% 0%"
 },{
@@ -49,10 +46,11 @@ let textdraw = gsap.fromTo(".svgtrace",{
     drawSVG:"0% 100%",
     ease: "sine.inOut",
 })
+*/
 
 let titre = gsap.timeline({
     scrollTrigger: {
-        markers: true,
+        markers: false,
         scrub: true,
         start: "1% top",
         end: "500% bottom",
@@ -71,11 +69,14 @@ let titre = gsap.timeline({
     ease: "none",
     color: '#FFFFFF',
     yoyo:true,
+    /*
     onStart: () => {
         textdraw.play()
     }
+    */
 })
 
+/*
 .fromTo(".Rmorph",
     {
         opacity:"0",
@@ -92,17 +93,16 @@ let titre = gsap.timeline({
 })
 
 
-
 .to(".Rmorph",{
     y: "65vh",
     ease: "none",
 })
-
+*/
 
 let chapitre1 = gsap.timeline({
     scrollTrigger: {
-        markers: true,
-        start: "3% top",
+        markers: false,
+        start: "0% top",
         end: "300% bottom",
         pin: true,
         trigger:'.chapitre1',
@@ -115,12 +115,12 @@ let chapitre1 = gsap.timeline({
     color: '#000000',
     textShadow:" -1px 0 rgb(0, 0, 0), 0 1px rgb(3, 3, 3), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0)",
 },{
-    duration:4,
+    duration:1,
     opacity:"1",
     ease: "sine.inOut",
     color: '#FFFFFF',
     textShadow: "-1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255)",
-})
+},"-=2")
 .fromTo(".image1perso",{
     y:"-25vh",
 },{
@@ -130,13 +130,13 @@ let chapitre1 = gsap.timeline({
     duration:3, 
     ease: "none",
 
-})
+},"-=3")
 
 let chapitre2 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "500% bottom",
             scrub: true,
             pin: true,
@@ -194,8 +194,8 @@ let chapitre2 = gsap.timeline(
 let chapitre3 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "500% bottom",
             scrub: true,
             pin: true,
@@ -231,8 +231,8 @@ let chapitre3 = gsap.timeline(
 let chapitre4 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "500% bottom",
             scrub: true,
             pin: true,
@@ -266,8 +266,8 @@ let chapitre4 = gsap.timeline(
 let chapitre5 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "1000% bottom",
             scrub: true,
             pin: true,
@@ -314,8 +314,8 @@ let chapitre5 = gsap.timeline(
 let chapitre6 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "500% bottom",
             scrub: true,
             pin: true,
@@ -384,59 +384,13 @@ let chapitre6 = gsap.timeline(
     
     duration: 2,
 },'<')
-/*
-.to('.image6monstre2',{
-    motionPath: {
-        align:'.motion_ligne_1_path',
-        alignOrigin: [0.5, 0.5],
-        path:'.motion_ligne_1_path',
-        autoRotate: true,
-        start:0,
-        end:1,
-    },
-    duration: 2,
-})
-.to('.image6monstre3',{
-    motionPath: {
-        align:'.motion_ligne_2_path',
-        alignOrigin: [0.5, 0.5],
-        path:'.motion_ligne_2_path',
-        autoRotate: true,
-        start:0,
-        end:1,
-    },
-    duration: 2,
-})
-.to('.image6monstre6',{
-    motionPath: {
-        align:'.motion_ligne_3_path',
-        alignOrigin: [0.5, 0.5],
-        path:'.motion_ligne_3_path',
-        autoRotate: true,
-        start:0,
-        end:1,
-    },
-    duration: 2,
-})
-.to('.image6monstre5',{
-    
-    motionPath: {
-        align:'.motion_ligne_4_path',
-        alignOrigin: [0.5, 0.5],
-        path:'.motion_ligne_4_path',
-        autoRotate: true,
-        start:0,
-        end:1,
-    },
-    duration: 2,
-})
-*/
+
 
 let chapitre7 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "500% bottom",
             scrub: true,
             pin: true,
@@ -474,8 +428,8 @@ let fin = gsap.fromTo(".textefin",{
 let chapitre8 = gsap.timeline(
     {
         scrollTrigger: {
-            markers: true,
-            start: "3% top",
+            markers: false,
+            start: "0% top",
             end: "1000% bottom",
             scrub: true,
             pin: true,

@@ -4,12 +4,12 @@
     box-sizing: content-box;
     margin: 0;
 }
-
+/*
 img {
     
     border: 1px solid var(--rougefonce);
 }
-
+*/
 
 :root {
     --blanc: #FFFFFF;
@@ -44,6 +44,9 @@ header {
 footer{
     margin-top: 4vh;
     margin-bottom: 4vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+
 }
 
 p {
@@ -65,6 +68,7 @@ ul.technique-gsap{
     z-index: 1000;
     top: 0;
     left: 0;
+    display: none;
 }
 
 ul.technique-gsap li{
@@ -78,6 +82,7 @@ ul.technique-gsap li{
 
 
 .svgtrace{
+    
     stroke-width: 200px;
     stroke: #ffffff;
     
@@ -185,9 +190,9 @@ ul.technique-gsap li{
     width: 6vh;
     height: 6vh;
     
-
     }
-   
+    
+    
 
 }
 
@@ -219,6 +224,7 @@ ul.technique-gsap li{
         color:var(--blanc);
         font-size: 11px;
     }
+   
     
 }
 
@@ -250,7 +256,7 @@ ul.technique-gsap li{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: solid #f53434;
+    
     overflow: hidden;
 }
 .fin {
@@ -259,7 +265,7 @@ ul.technique-gsap li{
     margin:0;
     position: absolute;
     background-color: var(--noir);
-    border: solid #f53434;
+    
     overflow: hidden;
     z-index: 7;
 }
@@ -278,7 +284,8 @@ ul.technique-gsap li{
 
 .svgtrace{
     position: absolute;
-    top:10vh;
+    top:5vh;
+    
 }
 
 
@@ -297,6 +304,10 @@ ul.technique-gsap li{
     visibility: hidden;
     width:10vw;
     height:10vh; 
+}
+
+.Rmorph{
+    display: none;
 }
 
 
@@ -531,20 +542,7 @@ ul.technique-gsap li{
     }
 
 }
-/*
-@media screen and (max-width:1000px) {
-    .image2monstre{
-        left: 25vw;
-        top:5vh;
-    }
 
-    .image2perso{
-        left:40vw;
-    }
-
-}
-
-*/
 @media screen and (max-width:1000px) and (min-width:700px) {
     .image2monstre{
         left: 26vw;
@@ -648,7 +646,7 @@ ul.technique-gsap li{
 .image3monstre{
     width: 80vh;
     position: absolute;
-    border:solid 1px aqua;
+    
 }
 
 
@@ -663,19 +661,7 @@ ul.technique-gsap li{
     }
 
 }
-/*
 
-@media screen and (max-width:1000px) {
-    .image3monstre{
-        right: 15vw;
-    }
-
-    .image3perso{
-        left:40vw;
-    }
-
-}
-*/
 
 @media screen and (max-width:1000px) and (min-width:700px) {
     .image3monstre{
@@ -958,68 +944,7 @@ ul.technique-gsap li{
 
 
 }
-/*
-@media screen and (max-width:1000px) {
-   
 
-    .image6perso{
-        left:40vw;
-    }
-    .image6monstre1{
-        left:30vw;
-        top:7vh;
-        
-
-    }
-
-    .image6monstre2{
-        top: 41vh;
-        left: 0vw;
-       
-
-    }
-
-    .image6monstre3{
-        left: 0;
-       
-        top: 65vh;
-
-    }
-
-    .image6monstre4{
-        
-        
-        top: 40vh;
-        right: 0;
-
-    }
-
-    .image6monstre5{
-      
-        
-        top: 65vh;
-      
-        right: 0;
-
-    }
-
-    .image6monstre6{
-        left: 0;
-        
-        top: 18vh;
-
-    }
-
-    .image6monstre7{
-        
-        right: 0;
-        top: 18vh;
-
-    }
-
-
-}
-*/
 
 @media screen and (max-width:1000px) and (min-width:700px) {
     .image6perso{
@@ -1405,12 +1330,7 @@ ul.technique-gsap li{
 
 
 /*------------------------------------------------- page spritesheet ---------------------------------------------------*/
-/*
-.containersprite{
-   width:100vw;
-   height:100vh;
-}
-*/
+
 
 .isScrolling .bgsprite{
 animation-play-state: running;
@@ -1469,11 +1389,4 @@ animation-play-state: running;
     to { background-position: 6000% 0 ;}
     
 }
-/*
-@media screen and (max-width: 800px) {
-    .bgsprite.un, .bgsprite.deux{
-        width:200px;
-        height: 200px;
-    }
-}
-*/
+
