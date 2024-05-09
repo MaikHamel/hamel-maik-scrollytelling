@@ -8,6 +8,7 @@
 
 ### Action concrete pour resoudre le probleme
 
+### Résultat
 
 
 ## probleme 2
@@ -15,9 +16,12 @@
 
 ### Action concrete pour resoudre le probleme
 
+### Résultat
 
 
 ## probleme 3
 ### Nom du probleme
 
 ### Action concrete pour resoudre le probleme
+
+### Résultat
