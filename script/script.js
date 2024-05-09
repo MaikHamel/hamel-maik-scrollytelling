@@ -339,23 +339,23 @@ let chapitre6 = gsap.timeline(
     ease: "easeIn",
 },'-=3')
 .from('.image6monstre7',{
-    x:"100vw",
+    x:"110vw",
 })
 .from('.image6monstre2',{
-    x:"-100vw",
+    x:"-110vw",
 })
 .from('.image6monstre4',{
-    x:"100vw",
+    x:"110vw",
 })
 .from('.image6monstre3',{
-    x:"-100vw",
+    x:"-110vw",
 })
 .from('.image6monstre6',{
-    x:"-100vw",
+    x:"-110vw",
 })
 
 .from('.image6monstre5',{
-    x:"100vw",
+    x:"110vw",
 })
 
 .fromTo(".image6monstre1",{
