@@ -7,8 +7,9 @@ gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
 */
 gsap.registerPlugin(MotionPathPlugin);
+/*
 gsap.set(".svgtrace",{drawSVG:"0% 0%"});
-
+*/
 
 
 
