@@ -14,12 +14,14 @@ Ajouter " loading="lazy" " à chaque balise d'images avant le "src".
 J'ai ajouté lazy loading à mes images pour qu'ils aparaissent seulement lorsque qu'ils aparaissent à l'écran. La performance a auguementé de 98 à 99.
 
 ## probleme 2
-### Nom du probleme
+### Le document ne contient pas une description meta
+Le probleme consiste au fait qu'il n'y a pas de description dans le head.
 
 ### Action concrete pour resoudre le probleme
+Ajouter une description meta dans la balise "head".
 
 ### Résultat
-
+J'ai ajouté une description dans le head, ce qui a aguementé le seo de 91 à 100 et la performance total de 99 à 100.
 
 ## probleme 3
 ### Nom du probleme
