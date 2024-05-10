@@ -5,13 +5,13 @@
 
 ## probleme 1
 ### Différez le chargement des images hors écran
-Le probeleme consiste au fait que les images ne sont pas masqué hors de l'écran, ce qui crée un délai avant l'intéractivité.
+Le probleme consiste au fait que les images ne sont pas masqué hors de l'écran, ce qui crée un délai avant l'intéractivité.
 
 ### Action concrete pour resoudre le probleme
 Ajouter " loading="lazy" " à chaque balise d'images avant le "src".
 
 ### Résultat
-J'ai ajouté lazy loading à mes images pour qu'ils aparaissent seulement lorsque qu'ils aparaissent à l'écran.
+J'ai ajouté lazy loading à mes images pour qu'ils aparaissent seulement lorsque qu'ils aparaissent à l'écran. La performance a auguementé de 98 à 99.
 
 ## probleme 2
 ### Nom du probleme
