@@ -4,12 +4,7 @@
     box-sizing: content-box;
     margin: 0;
 }
-/*
-img {
-    
-    border: 1px solid var(--rougefonce);
-}
-*/
+
 
 :root {
     --blanc: #FFFFFF;
