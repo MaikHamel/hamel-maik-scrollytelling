@@ -2,14 +2,14 @@
 let mm = gsap.matchMedia();
 
 gsap.registerPlugin(ScrollTrigger);
-/*
+
 gsap.registerPlugin(DrawSVGPlugin);
 gsap.registerPlugin(MorphSVGPlugin);
-*/
+
 gsap.registerPlugin(MotionPathPlugin);
-/*
+
 gsap.set(".svgtrace",{drawSVG:"0% 0%"});
-*/
+
 
 
 
@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
     },100);
 });
 
-/*
+
 let textdraw = gsap.fromTo(".svgtrace",{
     drawSVG:"0% 0%"
 },{
@@ -47,7 +47,7 @@ let textdraw = gsap.fromTo(".svgtrace",{
     drawSVG:"0% 100%",
     ease: "sine.inOut",
 })
-*/
+
 
 let titre = gsap.timeline({
     scrollTrigger: {
@@ -70,14 +70,14 @@ let titre = gsap.timeline({
     ease: "none",
     color: '#FFFFFF',
     yoyo:true,
-    /*
+    
     onStart: () => {
         textdraw.play()
     }
-    */
+    
 })
 
-/*
+
 .fromTo(".Rmorph",
     {
         opacity:"0",
@@ -98,7 +98,7 @@ let titre = gsap.timeline({
     y: "65vh",
     ease: "none",
 })
-*/
+
 
 let chapitre1 = gsap.timeline({
     scrollTrigger: {
@@ -121,7 +121,7 @@ let chapitre1 = gsap.timeline({
     ease: "sine.inOut",
     color: '#FFFFFF',
     textShadow: "-1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255)",
-},"-=2")
+},"-=0.5")
 .fromTo(".image1perso",{
     y:"-25vh",
 },{
@@ -131,7 +131,7 @@ let chapitre1 = gsap.timeline({
     duration:3, 
     ease: "none",
 
-},"-=3")
+},"-=0.5")
 
 let chapitre2 = gsap.timeline(
     {
