@@ -285,6 +285,10 @@ ul.technique-gsap li{
 .svgtrace{
     position: absolute;
     top:5vh;
+    fill: #000000;
+    stroke:"white";
+    stroke-width: 10px;
+    stroke-linecap: round;  stroke-linejoin: round;
     
 }
 
@@ -1316,8 +1320,12 @@ ul.technique-gsap li{
     width:100vw;
     height:100vh;
     visibility: hidden;
-
+    fill: none;
+    stroke: #000;
+    stroke-miterlimit: 10;
+    stroke-width: 4px;
 }
+
 .ligne_motion_1_path {
     position:absolute;
     top:0vh;
