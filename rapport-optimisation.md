@@ -1,5 +1,5 @@
 # Rapport d'optimisation du projet ScrollyTelling
-[Page Speed Insights - Rapport du 9 mai 2024, 14:42:03](https://pagespeed.web.dev/analysis/https-maik-tim-momo-com/u6y8nxvekq?form_factor=desktop)
+[Page Speed Insights - Rapport du 9 mai 2024, 14:28:34](https://pagespeed.web.dev/analysis/https-maik-tim-momo-com/u6y8nxvekq?form_factor=desktop)
 
 
 
@@ -35,4 +35,7 @@ Le probleme consiste au fait qu'il a des feuiles css/js et des liens en trop, ce
 Seulement garder les feuilles css/js essentiel pour améliorer la performance.
 
 ### Résultat
-J'ai enlevé les balise style des svg, puisqu'ils ont déja des classes dans le css, dans le html, ce qui a amélioré la performance pour desktop et pour mobile. la performance du mobile a augementé de 74 à 92.
+J'ai enlevé les balise style des svg, puisqu'ils ont déja des classes dans le css, dans le html, ce qui a amélioré la performance pour desktop et pour mobile. la performance du mobile a augementé de 74 à 91.
+
+## Rapport projet ScrollyTelling après optimisation
+[PageSpeed Insights - Rapport du 11 mai 2024, 11:27:44](https://pagespeed.web.dev/analysis/https-maik-tim-momo-com/8h5i39qv51?form_factor=mobile)
