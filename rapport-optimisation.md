@@ -3,11 +3,11 @@
 
 
 
-## probleme 1
+## problème 1
 ### Différez le chargement des images hors écran
 Le probleme consiste au fait que les images ne sont pas masqué hors de l'écran, ce qui crée un délai avant l'intéractivité.
 
-### Action concrete pour resoudre le probleme
+### Action concrète pour resoudre le problème
 Ajouter " loading="lazy" " à chaque balise d'images avant le "src".
 
 ### Résultat
@@ -15,11 +15,11 @@ J'ai ajouté lazy loading à chaque balise img dans le html pour qu'ils aparaiss
 
 
 
-## probleme 2
+## problème 2
 ### Le document ne contient pas une description meta
-Le probleme consiste au fait qu'il n'y a pas de description dans le head.
+Le problème consiste au fait qu'il n'y a pas de description dans le head.
 
-### Action concrete pour resoudre le probleme
+### Action concrète pour resoudre le problème
 Ajouter une description meta dans la balise "head".
 
 ### Résultat
@@ -31,8 +31,8 @@ J'ai ajouté une description dans le head du document html avant la balise meta 
 ### Éliminez les ressources qui bloquent le rendu
 Le probleme consiste au fait qu'il a des feuiles css/js et des liens en trop, ce qui ralenti le chargement des feuilles de style, qui est éxécuté avant l'affichage du site à l'utilisateur.
 
-### Action concrete pour resoudre le probleme
+### Action concrète pour resoudre le problème
 Seulement garder les feuilles css/js essentiel pour améliorer la performance.
 
 ### Résultat
-J'ai enlevé les balise style des svg, puisqu'ils ont déja des classes dans le css, dans le html, ce qui a amélioré la performance.
+J'ai enlevé les balise style des svg, puisqu'ils ont déja des classes dans le css, dans le html, ce qui a amélioré la performance pour desktop et pour mobile. la performance du mobile a augementé de 74 à 92.
