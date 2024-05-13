@@ -38,4 +38,4 @@ Seulement garder les feuilles css/js essentiel pour améliorer la performance.
 J'ai enlevé les balise style des svg, puisqu'ils ont déja des classes dans le css, dans le html, ce qui a amélioré la performance pour desktop et pour mobile. la performance du mobile a augementé de 74 à 86.
 
 ## Rapport projet ScrollyTelling après optimisation
-[PageSpeed Insights - Rapport du 11 mai 2024, 11:27:44](https://pagespeed.web.dev/analysis/https-maik-tim-momo-com/8h5i39qv51?form_factor=mobile)
+[PageSpeed Insights - Rapport du 12 mai 2024, 21:56:15](https://pagespeed.web.dev/analysis/https-maik-tim-momo-com/h77lb5feeb?form_factor=desktop)
