@@ -30,7 +30,7 @@ header {
     justify-content: space-around;
     width:100vw;
     height:100vh;
-    background-image: url("../img/img_arriere_plan/titre/background.jpg");
+    background-image: url("../img/img_arriere_plan/titre/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     filter: grayscale(100%) brightness(150%) ;
@@ -447,7 +447,7 @@ ul.technique-gsap li{
 
 /*-----------------------------chapitre 1------------------------------*/
 .chapitre1 {
-    background-image: url("../img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.png");
+    background-image: url("../img/img_arriere_plan/chapitre_1/background_ciel_chapitre_1.webp");
 }
 
 
@@ -486,7 +486,7 @@ ul.technique-gsap li{
 
 /*---------------------chapitre 2----------------------------------*/
 .containerparallax{
-    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
+    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.webp");
     width:100vw;
     height:100vh;
     margin:0;
@@ -594,7 +594,7 @@ ul.technique-gsap li{
 
 .imageparallaxdevant{
     z-index: 6;
-    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_proche__chapitre_2.png");
+    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_proche__chapitre_2.webp");
     width:400vw;
     height:100vh;
     margin:0;
@@ -605,7 +605,7 @@ ul.technique-gsap li{
 
 .imageparallaxmilieu{
     z-index: 3;
-    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_milieu__chapitre_2.png");
+    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_milieu__chapitre_2.webp");
     width:400vw;
     height:100vh;
     margin-top:0;
@@ -615,7 +615,7 @@ ul.technique-gsap li{
 
 }
 .imageparallaxarriere{
-    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.png");
+    background-image: url("../img/img_arriere_plan/chapitre_2/background_foret_arbre_loin__chapitre_2.webp");
     width:400vw;
     height:100vh;
     margin:0;
@@ -626,7 +626,7 @@ ul.technique-gsap li{
 }
 /*------------------------------chapitre 3-------------------------------------*/
 .chapitre3 {
-    background-image: url("../img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.png");  
+    background-image: url("../img/img_arriere_plan/chapitre_3/background_vide_noir_chapitre_3.webp");  
     object-fit: cover;
     background-position: bottom;
 }
@@ -695,7 +695,7 @@ ul.technique-gsap li{
 
 /*----------------------------------------chapitre 4---------------------------------------*/
 .chapitre4 {
-    background-image: url("../img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.png");  
+    background-image: url("../img/img_arriere_plan/chapitre_4/background_foret_chapitre_4.webp");  
 }
 .image4perso{
     z-index: 7;
@@ -757,7 +757,7 @@ ul.technique-gsap li{
 }
 
 .imageconstructiondevant{
-    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_avant_chapitre_5.png");
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_avant_chapitre_5.webp");
     width:100vw;
     height:100vh;
     margin:0;
@@ -821,7 +821,7 @@ ul.technique-gsap li{
 }
 
 .imageconstructionmilieu{
-    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.png");
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_arbre_arriere_chapitre_5.webp");
     width:100vw;
    
     height:100vh;
@@ -842,7 +842,7 @@ ul.technique-gsap li{
     background-color: var(--noir);
 }
 .imageconstructionarriere{
-    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_chapitre_5.png");
+    background-image: url("../img/img_arriere_plan/chapitre_5/background_foret_chapitre_5.webp");
     width:100vw;
     height:100vh;
     margin:0;
@@ -856,7 +856,7 @@ ul.technique-gsap li{
 
 /*----------------------------------------------------chapitre 6-------------------------------------*/
 .chapitre6 {
-    background-image: url("../img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.png");  
+    background-image: url("../img/img_arriere_plan/chapitre_6/background_vide_chapitre_6.webp");  
 }
 
 .image6monstre1, .image6monstre2, .image6monstre3, .image6monstre4, .image6monstre5, .image6monstre6, .image6monstre7 {
@@ -1124,7 +1124,7 @@ ul.technique-gsap li{
 
 /*-------------------------------------------------------------------chapitre 7---------------------------------------*/ 
 .chapitre7 {
-    background-image: url("../img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.png"); 
+    background-image: url("../img/img_arriere_plan/chapitre_7/background_foret_chapitre_7.webp"); 
 }
 
 .image7perso{
@@ -1166,7 +1166,7 @@ ul.technique-gsap li{
 
 /*-----------------------------------------------chapitre 8-------------------------------------*/
 .chapitre8 {
-    background-image: url("../img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.png"); 
+    background-image: url("../img/img_arriere_plan/chapitre_8/background_foret_chapitre_8.webp"); 
 }
 
 .image8perso{
